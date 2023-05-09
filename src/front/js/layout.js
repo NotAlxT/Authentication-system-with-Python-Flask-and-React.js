@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
-import { Login } from "./pages/login";
+import {Login}  from "./pages/login";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
