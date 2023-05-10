@@ -8,7 +8,7 @@ export function Login() {
     const {password, setPassword} = useState("")
     // const token = sessionStorage.getItem("token")
     console.log("This is your token", store.token)
-    // const history = useHistory()
+    // const history = useHistory() //uncomment for it to work but errors i cant solve
 
     const handleClick = () =>{
         actions.login(email, password)
@@ -30,4 +30,3 @@ export function Login() {
     )
 }
 
-   
