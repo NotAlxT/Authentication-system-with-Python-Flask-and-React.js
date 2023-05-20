@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import  useHistory  from 'react-dom';
 import { Context } from '../store/appContext'
+import { useNavigate } from 'react-router-dom';
 
 export function Login() { 
     const {store, actions } = useContext(Context);
@@ -8,7 +8,7 @@ export function Login() {
     const {password, setPassword} = useState("")
     // const token = sessionStorage.getItem("token")
     console.log("This is your token", store.token)
-    // const history = useHistory() //uncomment for it to work but errors i cant solve
+    const history = useNavigate() //uncomment for it to work but errors i cant solve
 
     const handleClick = () =>{
         actions.login(email, password)
